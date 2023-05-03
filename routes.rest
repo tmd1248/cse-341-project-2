@@ -1,0 +1,14 @@
+
+
+POST  HTTP/1.1 content-type: application/json
+
+{
+    "cardName": "Savannah Lions",
+    "colors": "White",
+    "manaValue": "1",
+    "type": "Creature",
+    "subtype": "Cat",
+    "stats": "2/1",
+    "text": "N/A"
+}
+###
