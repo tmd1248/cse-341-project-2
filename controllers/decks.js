@@ -26,7 +26,7 @@ const createDeck = async (req, res) => {
     card2Name: req.body.card2Name, 
     card2Number: req.body.card2Number
   };
-  const response = await mongodb.getDb().db().collection('cards').insertOne(card);
+  const response = await mongodb.getDb().db().collection('decks').insertOne(deck);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {

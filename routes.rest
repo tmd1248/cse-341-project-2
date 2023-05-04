@@ -1,6 +1,8 @@
+GET http://localhost:8080/cards
 
+###
 
-POST  HTTP/1.1 content-type: application/json
+POST http://localhost:8080/cards  HTTP/1.1 content-type: application/json
 
 {
     "cardName": "Savannah Lions",
@@ -12,3 +14,13 @@ POST  HTTP/1.1 content-type: application/json
     "text": "N/A"
 }
 ###
+
+POST http://localhost:8080/decks HTTP/1.1 content-type: application/json
+
+{
+    "deckName": "White Weenies", 
+    "card1Name": "Plains", 
+    "card1Number": "20",
+    "card2Name": "Savannah Lions",
+    "card2Number": "4"
+}
