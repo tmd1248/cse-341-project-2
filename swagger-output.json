@@ -5,7 +5,7 @@
     "description": "database storing theoretical magic the gathering decks",
     "version": "1.0.0"
   },
-  "host": "https://cse341-3x4y.onrender.com",
+  "host": "https://cse341project2.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"

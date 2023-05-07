@@ -5,7 +5,7 @@ const doc = {
     title: 'contacts API',
     description: 'database storing theoretical magic the gathering decks',
   },
-  host: 'https://cse341-3x4y.onrender.com',
+  host: 'https://cse341project2.onrender.com',
   schemes: ['http'],
 };
 

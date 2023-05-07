@@ -1,8 +1,8 @@
-GET http://localhost:8080/cards
+GET https://cse341project2.onrender.com/cards
 
 ###
 
-POST http://localhost:8080/cards  HTTP/1.1 content-type: application/json
+POST https://cse341project2.onrender.com/cards  HTTP/1.1 content-type: application/json
 
 {
     "cardName": "Savannah Lions",
@@ -15,7 +15,7 @@ POST http://localhost:8080/cards  HTTP/1.1 content-type: application/json
 }
 ###
 
-POST http://localhost:8080/decks HTTP/1.1 content-type: application/json
+POST https://cse341project2.onrender.com/decks HTTP/1.1 content-type: application/json
 
 {
     "deckName": "White Weenies", 
