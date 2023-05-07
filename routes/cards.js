@@ -1,12 +1,18 @@
 const express = require('express');
 const router = express.Router();
-
 const contactsController = require('../controllers/cards');
+const validation = require('../middleware/validate');
 
-router.get('/', contactsController.getAll);
+const cardsController = require('../controllers/cards');
 
-router.get('/:id', contactsController.getSingle);
+router.get('/', cardsController.getAll);
 
-router.post('/', contactsController.createCard);
+router.get('/:id', cardsController.getSingle);
+
+router.post('/', validation.saveCard, cardsController.createCard);
+
+router.put('/:id',validation.saveCard, cardsController.updateCard);
+
+router.delete('/:id', cardsController.deleteCard);
 
 module.exports = router;

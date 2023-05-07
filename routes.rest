@@ -24,3 +24,17 @@ POST https://cse341project2.onrender.com/decks HTTP/1.1 content-type: applicatio
     "card2Name": "Savannah Lions",
     "card2Number": "4"
 }
+
+###
+
+PUT http://localhost:8080/decks/6452f7b7d935ececd213081f HTTP/1.1 content-type: application/json
+
+{
+    "deckName": "White Weenies", 
+    "card1Name": "Plains", 
+    "card1Number": "20",
+    "card2Name": "Savannah Lions",
+    "card2Number": "4"
+}
+###
+DELETE http://localhost:8080/decks/6452f7b7d935ececd213081f HTTP/1.1
